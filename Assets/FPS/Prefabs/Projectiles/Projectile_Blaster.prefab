@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 3659995153115176982}
   - component: {fileID: 528546716365072993}
   - component: {fileID: 8924682559891268397}
+  - component: {fileID: 1509649496729544145}
   m_Layer: 0
   m_Name: Projectile_Blaster
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68,7 +69,7 @@ MonoBehaviour:
   impactSFXClip: {fileID: 0}
   hittableLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 1335
   speed: 100
   gravityDownAcceleration: 0
   trajectoryCorrectionDistance: 5
@@ -76,6 +77,19 @@ MonoBehaviour:
   damage: 15
   areaOfDamage: {fileID: 0}
   radiusColor: {r: 0, g: 1, b: 1, a: 1}
+--- !u!65 &1509649496729544145
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3659995153115176983}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 2.960476}
+  m_Center: {x: 0, y: 0.3, z: 3.0952382}
 --- !u!1 &5564024855854763701
 GameObject:
   m_ObjectHideFlags: 0
