@@ -10,6 +10,7 @@ public class MelodyChecker : MonoBehaviour
     public List<SonArbre1> listeAFaire;
     public int index = 0;
     public GameObject uiFinish;
+    public bool alreadyWin;
 
     public PostProcessVolume volume1;
     public PostProcessVolume volume2;
@@ -19,18 +20,21 @@ public class MelodyChecker : MonoBehaviour
     private void Awake()
     {
         source = GetComponent<AudioSource>();
-        
+        alreadyWin = false;
     }
 
     public void TryPlaySound(SonArbre1 arbreToTry)
     {
-        Win();
+        //Win();
         if (listeAFaire[index] == arbreToTry)
         {
             index+=1;
             if (index >= listeAFaire.Count)
             {
-                Win();
+                if (alreadyWin == false)
+                {
+                    Win();
+                }
             }
         }
         else
@@ -42,8 +46,10 @@ public class MelodyChecker : MonoBehaviour
     //Quand on gagne
     private void Win()
     {
+        alreadyWin = true;
         source.Play();
         StartCoroutine((CoroutineWin()));
+        
     }
 
     //Cinématique
