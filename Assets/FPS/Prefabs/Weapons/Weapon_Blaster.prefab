@@ -240,7 +240,7 @@ MonoBehaviour:
   steamVFXEmissionRateMax: 8
   overheatGradient:
     serializedVersion: 2
-    key0: {r: 0, g: 2.6398654, b: 0, a: 1}
+    key0: {r: 2.6398654, g: 0, b: 2.060041, a: 1}
     key1: {r: 5.2164755, g: 0.491605, b: 0, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
@@ -267,7 +267,7 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
-  overheatingMaterial: {fileID: 2100000, guid: 0c55f53a7bb3c354ababeb18b89c2fce, type: 2}
+  overheatingMaterial: {fileID: 2100000, guid: 31d613a382f03c344b6168bd5897dbc7, type: 2}
   coolingCellsSound: {fileID: 8300000, guid: 93331a7c9fe98494a84f18effb358899, type: 3}
   ammoToVolumeRatioCurve:
     serializedVersion: 2
