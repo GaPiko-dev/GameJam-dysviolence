@@ -25,22 +25,25 @@ public class MelodyChecker : MonoBehaviour
 
     public void TryPlaySound(SonArbre1 arbreToTry)
     {
-        //Win();
-        if (listeAFaire[index] == arbreToTry)
+        if (alreadyWin == false)
         {
-            index+=1;
-            if (index >= listeAFaire.Count)
+            //Win();
+            if (listeAFaire[index] == arbreToTry)
             {
-                if (alreadyWin == false)
+                index += 1;
+                if (index >= listeAFaire.Count)
                 {
+                    index = 0;
+
                     Win();
                 }
             }
-        }
-        else
-        {
-            index = 0;
-        }
+        
+            else
+            {
+                index = 0;
+            }
+     }
     }
 
     //Quand on gagne
@@ -77,6 +80,7 @@ public class MelodyChecker : MonoBehaviour
     private void CloseUIFinish()
     {
         uiFinish.SetActive(false);
+        source.Stop();
     }
 
 }
