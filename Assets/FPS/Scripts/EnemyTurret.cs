@@ -130,7 +130,7 @@ public class EnemyTurret : MonoBehaviour
 
         if (onDetectSFX)
         {
-            AudioUtility.CreateSFX(onDetectSFX, transform.position, AudioUtility.AudioGroups.EnemyDetection, 1f);
+            AudioUtility.CreateSFX(onDetectSFX, transform.position, AudioUtility.AudioGroups.EnemyDetection, 0f);
         }
 
         animator.SetBool(k_AnimIsActiveParameter, true);
